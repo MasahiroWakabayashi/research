@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const randomIndex = Math.floor(Math.random() * groups.length);
     const selectedGroup = groups[randomIndex];
 
-    document.getElementById("group").textContent = `あなたは ${selectedGroup.name} に割り当てられました。`;
+    // document.getElementById("group").textContent = `あなたは ${selectedGroup.name} に割り当てられました。`;
     document.getElementById("url").innerHTML = `<a href="${selectedGroup.url}" target="_blank">${selectedGroup.url}</a>`;
 });
