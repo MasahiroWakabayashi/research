@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実験参加ありがとうございます</title>
+    <script>
+        function redirectRandomURL() {
+            // ランダムにリダイレクトするURLのリスト
+            const urls = [
+                "https://forms.gle/KSrgEqtKdnPM1mwG7",
+                "https://forms.gle/11kZau1Z7RGbW2wz8",
+                "https://forms.gle/otEkffZwsUDfTjhf7"
+            ];
+
+            // 0からurls配列の長さまでのランダムなインデックスを取得
+            const randomIndex = Math.floor(Math.random() * urls.length);
+
+            // ランダムなURLにリダイレクト
+            window.location.href = urls[randomIndex];
+        }
+
+        // ページが読み込まれたら自動でリダイレクト
+        window.onload = redirectRandomURL;
+    </script>
+</head>
+<body>
+    <h1>実験ページに遷移しています...</h1>
+</body>
+</html>
+
